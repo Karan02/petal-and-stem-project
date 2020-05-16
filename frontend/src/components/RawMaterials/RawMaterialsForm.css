@@ -1,0 +1,170 @@
+@import "../../variables.css";
+
+.rawMaterialsForm {
+  /* margin-bottom: var(--margin-md); */
+}
+
+.idWrapper {
+  display: none;
+}
+
+.safetyWarnItem {
+    margin-bottom:5px;
+}
+
+.safetyWarnItem::before {
+    content: "- "
+}
+
+.safetyWarnItem::first-line {
+    color:#FBB827;
+    font-weight:bold;
+}
+.dermal{
+  color:#FBB827;
+  font-weight:bold;
+}
+
+.nameWrapper {
+  padding-left: var(--margin-xl);
+  margin-bottom: 26px !important;
+}
+
+.textArea {
+  margin-top: 10px;
+  margin-bottom: 10px !important;
+  background-color: red;
+}
+
+.nameWrapper,
+.quantityWrapper,
+.unitWrapper {
+    margin-bottom: 0;
+}
+.unitWrapper {
+}
+
+.titleWrapper {
+  flex: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.latinTitle {
+  font-size: 12px;
+  /* line-height: 0px; */
+  /* margin: auto; */
+}
+.title {
+  /* line-height: 0px; */
+  padding-left: 0px !important;
+  padding-right: 4px !important;
+  /* margin: auto; */
+}
+
+.quantity {
+  width: 55px;
+  margin-right: 11px;
+}
+
+.unit {
+  min-width: 85px;
+}
+
+.rawMaterialsTextHandler {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px!important;
+}
+
+.row {
+  margin-bottom: var(--margin-sm);
+  height: 80px;
+}
+
+.itemRow {
+  margin-bottom: var(--margin-sm);
+  /* height: 40px; */
+  position: relative;
+  padding-left: var(--margin-xl);
+  /* flex-wrap: nowrap; */
+}
+
+.ingredientsContainer {
+  width: 100%;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  margin-top: 6px;
+  display: flex;
+}
+
+.col {
+}
+
+.priceWrapper {
+  text-align: right;
+  min-width: 60px;
+  text-align: center;
+  min-width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  
+}
+
+.price {
+  display: inline-block;
+  margin-left:15px;
+}
+
+.removeBtn {
+  /* position: absolute; */
+  left: 0;
+  /* top: 16%; */
+  /* transform: translateY(-50%); */
+  color: var(--brand-primary);
+  display: flex;
+  margin-top: 5px;
+  padding-left: 0px !important;
+  padding-right: 8px !important;
+}
+
+.removeIcon {
+  /* width: 1.5rem;
+  height: 1.5rem; */
+  font-size: 18px;
+}
+.labels {
+  line-height: 30px;
+  font-size: 14px !important;
+  font-weight: 500;
+}
+
+
+@media only screen and (max-width: 340px) {
+  .removeBtn {
+    padding-left: 0px !important;
+    padding-right: 8px !important;
+  }
+  .title {
+    margin: auto 0;
+  }
+  .latinTitle {
+    padding: 10px;
+  }
+}
+.ingredientsInfo{
+  float: right;
+  text-align: end;
+  position: absolute;
+  right: 0px;
+}
+.marginCurrency{
+  margin-right:0px;
+}
+
+.logo{
+  position: absolute;
+  right: 8px;
+}

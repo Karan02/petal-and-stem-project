@@ -1,0 +1,149 @@
+@import "../../variables.css";
+
+.form {
+  margin-bottom: var(--margin-md);
+}
+
+.name {
+  width: 100%;
+}
+.markupFactor {
+  width: 100%;
+}
+
+.row {
+  margin-bottom: var(--margin-sm);
+  /* height: 40px; */
+}
+.seperatorText {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3px;
+  margin-top: 12px;
+}
+.seperatorLine {
+  margin: var(--margin-lg) 0;
+  border: 0.5px solid #d9d9d9;
+}
+.addNewProductRow {
+  margin-bottom: 0px;
+}
+.containerSearchWrapper {
+  /* margin-bottom: var(--margin-md); */
+  /* height: 40px; */
+  width: 100%;
+}
+.percentSign {
+  padding-left: 10px;
+}
+.labels {
+  line-height: 30px;
+  font-size: 14px !important;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.taxWithMarkup {
+  width: 50%;
+}
+.salesTax {
+  width: 70px !important;
+}
+.loadingInfo {
+  justify-content: center;
+  display: flex;
+}
+.loadingText {
+  padding-left: 9px;
+}
+
+.ingredientsLabelTwo {
+  display: flex;
+}
+.ingredientsLabel {
+  display: flex;
+
+  justify-content: space-between;
+}
+.icons {
+  padding-right: 12px;
+}
+.labels {
+  line-height: 3;
+  padding-left: 33px;
+  font-weight: 500;
+  padding-right: 33px;
+}
+.labelExplanation {
+  /* padding-left: 33px; */
+  color: #aaaaaa;
+}
+
+.ingredientsLabelTwo {
+  display: flex;
+}
+.ingredientsLabel {
+  display: flex;
+
+  justify-content: space-between;
+}
+.icons {
+  padding-right: 12px;
+}
+
+.ingredientsLabelTwo {
+  /* position: absolute;
+   left: 0;
+  right: 0; */
+}
+.labels {
+  line-height: 3;
+  padding-left: 0px;
+  font-weight: 500;
+  padding-right: 33px;
+}
+@media only screen and (max-width: 400px) {
+  .labels {
+    padding-right: 0px;
+  }
+}
+.listBtn {
+  
+  /* left: 0; */
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+  color: var(--brand-primary);
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 3px;
+  padding-right: 6px;
+}
+
+.listIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.flexDisplay{
+  display: flex;
+  width: 100%;
+}
+
+.search{
+  width: 100%;
+}
+
+.hideClass{
+  display: none;
+}
+.showSaveAs{
+  float: right;
+}
+
+
+
+.spaceBetween{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}

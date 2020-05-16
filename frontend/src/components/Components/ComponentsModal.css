@@ -1,0 +1,46 @@
+@import '../../variables.css';
+
+.sizeColumn,
+.sizeUnitColumn,
+.supplierColumn,
+.ppuColumn,
+.currencyColumn,
+.sizeColumn,
+.categoryColumn {
+  /* overridden ant styles */
+  text-align: left !important;
+  word-break: normal !important;
+}
+
+th.categoryColumn,
+th.sizeColumn,
+th.sizeUnitColumn,
+th.supplierColumn,
+th.currencyColumn,
+th.ppuColumn,
+th.priceColumn {
+  white-space: nowrap;
+}
+
+.searchInput {
+  margin-bottom: var(--margin-md);
+  width: 35%;
+}
+
+.myComponent{
+  padding-top: 5px;
+  padding-right: 10px;
+}
+.displayFlex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.alignCenter{
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+.alignRight{
+  float: right;
+}

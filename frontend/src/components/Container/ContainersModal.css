@@ -1,0 +1,20 @@
+@import '../../variables.css';
+
+.priceColumn {
+  /* overridden ant styles */
+  text-align: center !important;
+  word-break: normal !important;
+}
+
+th.priceColumn {
+  white-space: nowrap;
+}
+
+.row {
+  cursor: pointer;
+}
+
+.searchInput {
+  margin-bottom: var(--margin-md);
+  width: 100%;
+}

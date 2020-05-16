@@ -1,0 +1,52 @@
+@import '../../variables.css';
+
+.categoryColumn,
+.supplierColumn,
+.latinNameColumn,
+.quantityColumn,
+.priceColumn,
+.ordernumColumn,
+.currencyColumn,
+.biologicalColumn,
+.quantityUnitColumn,
+.action {
+  /* overridden ant styles */
+  text-align: left !important;
+  word-break: normal !important;
+}
+
+th.categoryColumn,
+th.supplierColumn
+th.latinNameColumn,
+th.quantityColumn,
+th.priceColumn,
+th.ordernumColumn,
+th.currencyColumn,
+th.biologicalColumn,
+th.quantityUnitColumn,
+th.action {
+  white-space: nowrap;
+}
+
+.searchInput {
+  margin-bottom: var(--margin-md);
+  width: 35%;
+}
+
+.myrawMaterial{
+  padding-top: 5px;
+  padding-right: 10px;
+}
+.displayFlex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.alignCenter{
+  /* display: flex;
+  justify-content: center; */
+}
+
+.alignRight{
+  float: right;
+}

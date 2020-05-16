@@ -1,0 +1,73 @@
+:root {
+  /*
+   * Typography
+   * ======================================================================== */
+  --border-radius: 4px;
+
+  /*
+   * Layout
+   * ======================================================================== */
+  --max-content-width: 1200px;
+  --header-height: 56px;
+  --footer-height: 48px;
+
+  /*
+   * Z-index
+   * ======================================================================== */
+  --sider-z-index: 10;
+  --header-z-index: 11;
+
+  /*
+   * Media queries breakpoints
+   * ======================================================================== */
+  @custom-media --xs-down (width < 480px);
+  @custom-media --xs-up (width >= 480px);
+  @custom-media --sm-down (width < 768px);
+  @custom-media --sm-up (width >= 768px);
+  @custom-media --md-down (width < 992px);
+  @custom-media --md-up (width >= 992px);
+  @custom-media --lg-down (width < 1200px);
+  @custom-media --lg-up (width >= 1200px);
+  @custom-media --xl-down (width < 1600px);
+  @custom-media --xl-up (width >= 1600px);
+
+  --screen-xs-min: 480px; /* Extra small screen / phone */
+  --screen-sm-min: 768px; /* Small screen / tablet */
+  --screen-md-min: 992px; /* Medium screen / desktop */
+  --screen-lg-min: 1200px; /* Large screen / wide desktop */
+  --screen-xl-min: 1600px; /* Extra Large screen / extra wide desktop */
+
+  /*
+   * Colors
+   * ======================================================================== */
+  --text-color: color(#000 a(65%));
+  --component-background: #fff;  
+  --sider-background: #fbfbfb;
+  --border-color: #d9d9d9;
+
+  --brand-primary: color(black a(65%));
+  --brand-primary-hover: color(var(--brand-primary) shade(30%));
+  --muted: #919191;
+  --white: #fff;
+  --background: #ececec;
+  --primary-color: #1890ff;
+  --primary-1: #e6f7ff;
+  --icon-color: #666;
+  --muted-white: #ebebeb;
+  --red: #f5222d;
+  --black: #000;
+
+  /*
+   * Margins
+   * ======================================================================== */
+  --margin-xs: 8px;
+  --margin-sm: 12px;
+  --margin-md: 16px;
+  --margin-lg: 24px;
+  --margin-xl: 32px;
+
+  /*
+   * Custom selectors
+   * ======================================================================== */
+  @custom-selector :--hover :hover, :focus;
+}

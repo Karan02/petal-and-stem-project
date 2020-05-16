@@ -1,0 +1,77 @@
+@import "../../variables.css";
+
+.rawMaterialSearchWrapper {
+  display: flex;
+  position: relative;
+  padding-left: var(--margin-xl);
+  /* margin-bottom: 25px; */
+}
+
+.rawMaterialSearch {
+  width: 100%;
+}
+
+.listBtn {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--brand-primary);
+  display: flex;
+  align-items: center;
+}
+
+.listIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.loadingInfo {
+  justify-content: center;
+  display: flex;
+}
+.loadingText {
+  padding-left: 9px;
+}
+
+
+.logoInner{
+  height:14px;
+  width:14px; 
+}
+.logoOuter{
+  margin-right: 8px;
+}
+.blankSpace{
+  padding-left: 18px;
+}
+
+.radioButtons{
+  padding-top:10px;
+  padding-bottom:20px;
+  padding-left: 10%;
+}
+
+.categorySelection{
+  font-weight: 500;
+}
+
+.hide{
+  display: none;
+}
+.eachRadio{
+  width: 47%;
+}
+
+.spinPadding{
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.spinHeight{
+  min-height: 50px;
+}
+
+.checkbox{
+  padding-bottom:10px;
+  padding-left: 30px;
+}

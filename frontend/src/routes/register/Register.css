@@ -1,0 +1,50 @@
+@import '../../variables.css';
+
+.container {
+  margin: 0 auto;
+  max-width: var(--max-content-width);
+  width: 100%;
+
+  @media (--sm-up) {
+    padding: var(--margin-xl);
+  }
+}
+
+.header {
+  margin-bottom: var(--margin-md);
+  font-size: 18px;
+  text-align: center;
+}
+
+.content {
+  background-color: var(--component-background);
+  box-shadow: 0 3px 4px 0 rgba(0, 39, 36, 0.1);
+  margin-top: var(--margin-md);
+  margin-bottom: var(--margin-md);
+
+  @media (--sm-down) {
+    padding: var(--margin-md);
+  }
+  @media (--sm-up) {
+    padding: var(--margin-lg);
+    border-radius: var(--border-radius);
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+
+.actions {
+}
+
+.alert {
+  margin-bottom: var(--margin-md);
+}
+
+.submitBtn {
+  width: 100%;
+}
+
+.passwordPadding{
+  padding-bottom: 10px;
+  padding-top: 10px;
+}

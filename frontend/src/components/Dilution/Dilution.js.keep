@@ -1,0 +1,105 @@
+import React from 'react'
+import {connect} from 'react-redux'
+import withStyles from 'isomorphic-style-loader/lib/withStyles'
+import s from './Dilution.css'
+import {Button, Card, Select, Spin, Input} from 'antd'
+import Highcharts from 'highcharts'
+import HighchartsReact from 'highcharts-react-official'
+import PieChart from 'highcharts-react-official';
+
+class Dilution extends React.Component {
+/*
+  setHoverData = (e) => {
+    // The chart is not updated because `chartOptions` has not changed.
+    this.setState({ hoverData: e.target.category })
+  }
+
+  updateSeries = () => {
+    // The chart is updated only with new options.
+    this.setState({
+      chartOptions: {
+        series: [
+          { data: [Math.random() * 5, 2, 1]}
+        ]
+      }
+    });
+  }    
+*/
+    
+  constructor(props) {
+      super(props);
+      
+    this.state = {
+        // To avoid unnecessary update keep all options in the state.
+        
+        chartOptions: {
+          chart: {
+            type: "pie"
+          },
+            tooltip: {
+                headerFormat: '',
+                pointFormat: '<span style="color:{point.color}">\u25CF</span> <b> {point.name}</b><br/>' +
+                    'Percent {point.y} %</b><br/>' +
+                    'Volume {point.z} ml</b><br/>'
+            },
+            series: [{
+                minPointSize: 10,
+                innerSize: '20%',
+                zMin: 0,
+                name: 'countries',
+                data: [
+                 {
+                    name: 'Jojoba Oil',
+                    y: 90,
+                    z: 15
+                }, {
+                    name: 'Lavendar',
+                    y: 5,
+                    z: 6
+                }, {
+                    name: 'Tea Tree',
+                    y: 3,
+                    z: 4
+                }, {
+                    name: 'Peppermint',
+                    y: 2,
+                    z: 2
+                }]
+            }]
+      },
+      hoverData: null
+    };
+  }
+  componentWillMount() {
+    // TODO get initial list of dilutions
+  }
+
+  render() {
+    const { chartOptions, hoverData } = this.state;        
+      
+    return (
+      <Card
+        className={s.container}
+        title={'Dilution'}
+        bodyStyle={{minHeight: 300}}
+        actions={[
+        ]}
+      >
+        <div className={s.rborder}>
+          <PieChart highcharts={Highcharts} options={chartOptions} />          
+        </div>
+      </Card>
+    )
+  }
+}
+
+const mapState = state => ({
+  ...state.dilution,
+  selectedRawMaterials: state.rawMaterials.selectedRawMaterials,
+  fields: state.rawMaterials.fields,
+});
+
+const mapDispatch = {
+}
+
+export default connect(mapState, mapDispatch)(withStyles(s)(Dilution))

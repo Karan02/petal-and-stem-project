@@ -1,0 +1,128 @@
+@import "../../variables.css";
+
+.container {
+    width: 100%;    
+    min-width: 0;
+    background: white;
+    background-image: url(../../static/recipes_bg.png);
+    background-position:bottom;
+    background-attachment: initial;    
+    background-repeat: no-repeat;
+    background-size: 100% 50%;  
+    
+    /* @media (--sm-down) {     */
+    /*     background-image: none; */
+    /* } */
+  @media (--sm-up) {
+    padding: var(--margin-xl);
+  }
+
+  @media print{
+    
+    .container{
+      background-attachment: initial;
+    }
+  }
+  
+  @media (--sm-down) {
+      background-size: 100% 30%;        
+  }
+  
+  @media (--xs-down) {
+      background-image: none;
+      background-size: 100% 20%;        
+  }
+    
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.widthSetter {
+  width: 33%;
+}
+@media screen and (max-width: 850px) {
+  .widthSetter {
+    width: 100%;
+  }
+  /* .widthSetter:last-child{
+    padding-top: 50px;
+  } */
+}
+
+.content {
+  max-width: var(--max-content-width);
+  /* max-width: 100%;  */
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--margin-md);
+  padding-left: var(--margin-md);
+  width: 100%;
+  @media (--lg-up) {
+    /* margin-top: 200px; */
+    margin-top: 50px;
+  }
+  @media (--lg-down) {
+    margin-top: var(--margin-md);
+  }
+}
+
+.siderTrigger {
+  @media (--sm-up) {
+    display: none;
+  }
+  @media (--sm-down) {
+    position: absolute;
+    top: 52px;
+    padding-right: var(--margin-xs);
+    padding-left: var(--margin-xs);
+    text-align: center;
+    height: 42px;
+    min-width: 42px;
+    transform: translateX(-100%);
+    line-height: 42px;
+    background: var(--sider-background);
+    color: var(--text-color);
+    border-radius: 4px 0 0 4px;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+}
+
+.sider {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 3px 4px 0 rgba(0, 39, 36, 0.1);
+  background: var(--sider-background);
+  z-index: var(--sider-z-index);
+
+  @media (--lg-down) {
+    padding-top: var(--margin-md);
+  }
+  @media (--lg-up) {
+    padding-top: 200px;
+  }
+
+  @media (--sm-down) {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: var(--header-height);
+  }
+}
+
+.card {
+  flex: 1;
+  margin-bottom: var(--margin-md);
+}
+
+@media screen and (min-width: 850px) {
+  .content {
+    /* height: 100vh; */
+  }
+}
+/* .widthSetter:last-child{
+    padding-top: 50px;
+  */

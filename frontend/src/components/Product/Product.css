@@ -1,0 +1,120 @@
+@import "../../variables.css";
+
+/* .container {
+  padding-right: var(--margin-md);
+  padding-left: var(--margin-md);
+  width:33%;
+}
+*/
+.search {
+  padding-bottom: 0px;
+}
+@media screen and (max-width: 850px) {
+  .container {
+    margin-bottom: 16px;
+    margin-top: 25px;
+  }
+}
+
+.containerSearchWrapper {
+  display: flex;
+  position: relative;
+  margin-bottom: 3px;
+}
+
+.containerSearch {
+  width: 100%;
+}
+
+.productSearch {
+  width: 100%;
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--margin-md);
+  margin-bottom: var(--margin-md);
+}
+
+.header {
+  margin-bottom: 0;
+}
+
+/* .table :global(.ant-table) {
+  border: none;
+  min-height: 205px;
+
+  td {
+    word-break: normal !important;
+  }
+} */
+
+.infodetail{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.nameColumn {
+  font-weight: bold;
+}
+
+.priceColumn {
+  text-align: right;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--margin-sm);
+}
+.selectCategory {
+  padding-bottom: 24px;
+}
+
+.containerSearchWrapper {
+  /* padding-bottom: 16px; */
+}
+
+.labelExplanation {
+  padding-left: 33px;
+  color: #aaaaaa !important;
+}
+
+.ingredientsLabelTwo {
+  display: flex;
+}
+
+.icons {
+  padding-right: 12px;
+}
+
+.extra{
+  position: relative;
+  display: flex;
+}
+.print{
+  position: absolute;
+  left: -34px;
+  /* top: 1px; */
+  z-index: 999;
+  margin-right: 10px;
+}
+.clearOption{
+  position: absolute;
+  top: -39px;
+  left: 50px;
+}
+
+.hideClass{
+  display: none;
+}
+.downloadRecipe{
+  float: right;
+}
+.productextra{
+  position: relative;
+  /* left: -80px; */
+  /* top: -6px; */
+  margin-right: 10px;
+}

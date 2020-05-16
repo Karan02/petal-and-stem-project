@@ -1,0 +1,65 @@
+@import "../../variables.css";
+
+.componentsForm {
+  /* margin-bottom: var(--margin-md); */
+  margin-bottom: 0px;
+  margin-top: 12px;
+}
+
+.idWrapper {
+  display: none;
+}
+
+.nameWrapper {
+  padding-left: var(--margin-xl);
+}
+
+.nameWrapper,
+.quantityWrapper,
+.unitWrapper {
+  margin-bottom: 0;
+}
+
+.name,
+.quantity,
+.unit {
+  width: 100%;
+}
+
+.row {
+  margin-bottom: var(--margin-sm);
+  height: 40px;
+  margin-top: 100px;
+}
+
+.itemRow {
+  margin-bottom: var(--margin-sm);
+  /* height: 40px; */
+  position: relative;
+  padding-left: var(--margin-xl);
+}
+
+.col {
+}
+
+.priceWrapper {
+  text-align: right;
+}
+
+.price {
+  display: inline-block;
+}
+
+.removeBtn {
+  position: absolute;
+  left: 0;
+  top: 35%;
+  transform: translateY(-50%);
+  color: var(--brand-primary);
+}
+
+.removeIcon {
+  /* width: 1.5rem;
+  height: 1.5rem; */
+  font-size: 18px;
+}

@@ -1,0 +1,62 @@
+@import '../../variables.css';
+
+#container {
+  @media (--lg-down) {
+    margin-bottom: var(--margin-md);
+  }
+
+
+}
+.container{
+  margin-top: 25px;
+  
+}
+
+.recipeSearchWrapper {
+  display: flex;
+  position: relative;
+  padding-left: var(--margin-xl);
+}
+
+.recipeSearch {
+  width: 100%;
+}
+
+.listBtn {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--brand-primary);
+  display: flex;
+  align-items: center;
+}
+
+.listIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.divider {
+  color: var(--muted);
+  text-align: left;
+  padding: var(--margin-sm);
+}
+
+.rborder {
+    /* margin:10px; */
+    /* margin-top:20px; */
+    padding-left:10px;
+    padding-right: 10px;
+    /* border: 1px solid #0ff; */
+    /* border-color: var(--muted); */
+}
+.alignContent{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    align-self: center;
+    margin-top: 10px;
+}

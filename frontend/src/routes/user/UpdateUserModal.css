@@ -1,0 +1,9 @@
+@import '../../variables.css';
+
+.input {
+  width: 100%;
+}
+
+.alert {
+  margin-bottom: var(--margin-md);
+}

@@ -1,0 +1,26 @@
+@import '../../variables.css';
+
+.container {
+  margin: var(--margin-md) auto;
+  max-width: 500px;
+  width: 100%;
+
+  @media (--sm-up) {
+    padding: var(--margin-xl);
+  }
+}
+
+.row {
+  margin-bottom: var(--margin-sm);
+}
+
+.label {
+  @media (--sm-up) {
+    text-align: right;
+  }
+  font-weight: 600;
+}
+
+.icon {
+  margin-right: var(--margin-xs);
+}

@@ -1,0 +1,79 @@
+@import "../../variables.css";
+
+.componentSearchWrapper {
+  display: flex;
+  position: relative;
+  padding-left: var(--margin-xl);
+}
+
+.componentSearch {
+  width: 100%;
+  /* margin-bottom: 20px; */
+}
+
+.listBtn {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--brand-primary);
+  display: flex;
+  align-items: center;
+}
+.listIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.loadingInfo {
+  justify-content: center;
+  display: flex;
+}
+.loadingText {
+  padding-left: 9px;
+}
+
+.spinPadding{
+  padding-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.spinHeight{
+  min-height: 50px;
+}
+.eachRadio{
+  width: 44% !important;
+  /* flex: 1 0 55%; */
+}
+
+.radioButtons{
+  padding-top:10px;
+  padding-bottom:20px;
+  padding-left: 10%;
+  
+}
+
+.categorySelection{
+  font-weight: 500;
+}
+.checkbox{
+  padding-bottom:10px;
+  padding-left: 30px;
+}
+
+.logoInner{
+  height:14px;
+  width:14px; 
+}
+.logoOuter{
+  margin-right: 8px;
+}
+
+.blankSpace{
+  padding-left: 18px;
+}
+.radioGroup{
+  display: flex;
+  flex-wrap: wrap;
+}

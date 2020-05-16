@@ -1,0 +1,98 @@
+@import '../../variables.css';
+
+.footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  padding: var(--margin-xs) var(--margin-md);
+  height: auto;
+  /* max-width:90%;
+  margin: auto 10%; */
+  
+
+  @media (--xs-up) {
+    height: var(--footer-height);
+    /* justify-content: space-between; */
+    justify-content: space-around;
+  }
+  @media (--xs-down) {
+    flex-direction: column;
+  }
+}
+
+.faq,.join_ig,.contact{
+  color: var(--text-color);
+}
+.leftMenu {
+  display: flex;
+
+  @media (--xs-down) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  & > * {
+    padding-top: var(--margin-xs);
+
+    @media (--xs-up) {
+      padding-bottom: var(--margin-xs);
+
+      &:not(:last-child):after {
+        content: '•';
+        padding-right: var(--margin-xs);
+        padding-left: var(--margin-xs);
+      }
+    }
+  }
+}
+
+.rightMenu {
+  display: flex;
+  padding-top: var(--margin-xs);
+  padding-bottom: var(--margin-xs);
+
+  & > *:not(:last-child) {
+    margin-right: var(--margin-sm);
+  }
+}
+
+.privacyLink {
+  color: var(--text-color);
+}
+
+.Link {
+  display: flex;
+  color: var(--text-color);
+}
+
+.Icon {
+  width: 20px;
+  height: 20px;
+}
+@media only screen and (max-width: 767px) {
+.footer{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.leftMenu{
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px; 
+}
+.contact{
+  margin-right: 25px;
+}
+.middle{
+  margin-bottom: 12px;
+}
+}
+@media only screen and (max-width: 450px) {
+  .leftMenu{
+    flex-direction: column;
+  }
+  .contact{
+    margin-right: 0px;
+  }
+}

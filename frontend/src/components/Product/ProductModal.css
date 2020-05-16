@@ -1,0 +1,19 @@
+.alignCenter{
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+.searchInput{
+  width: 30%;
+}
+.displayFlex{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.alignRight{
+  float: right;
+}

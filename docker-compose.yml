@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust
+      POSTGRES_DB: blendprecisely
+      POSTGRES_USER: blendprecisely
+      POSTGRES_PASSWORD: blendprecisely
+  web:
+    build:
+      context: .
+    entrypoint: ./entrypoint.sh   
+    volumes:
+      - ./backend:/code
+    environment:
+      DJANGO_SETTINGS_MODULE: project.settings_docker
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
