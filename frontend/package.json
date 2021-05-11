@@ -37,7 +37,7 @@
     "isomorphic-style-loader": "^4.0.0",
     "jspdf": "^1.5.3",
     "localized-countries": "^1.0.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "moment": "^2.22.1",
     "node-fetch": "^2.2.0",
     "papaparse": "^5.1.0",
